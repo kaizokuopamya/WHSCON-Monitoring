@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaCopy } from "react-icons/fa";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Tippy from "@tippyjs/react";
 
 export default function Info(props) {
   const [isCopied, setIsCopied] = useState(false);
@@ -28,7 +29,7 @@ Thank you`;
       <label className="font-bold text-sky-500">Short Description:</label>
       <div className="block p-6 mb-8 max-w-sm bg-[001E3C] rounded-lg border border-slate-600 shadow-md">
         <CopyToClipboard text={shortDescription} onCopy={onCopyText}>
-          <FaCopy className="ml-1 float-right cursor-pointer text-white" />
+          <FaCopy className="ml-1 float-right cursor-pointer text-white outline-none" />
         </CopyToClipboard>
         <p className="font-normal text-gray-100 cursor-text">
           {shortDescription}
