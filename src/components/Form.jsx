@@ -38,7 +38,7 @@ export default function Form() {
       <form className="block p-6 mb-2 border border-slate-600 rounded-lg shadow-lg bg-[001E3C] max-w-md w-full">
         <div className="form-group mb-4">
           <label
-            for="idoc-no"
+            htmlFor="idoc-no"
             className="block mb-1 text-sm font-medium text-sky-400"
           >
             IDoc Number
@@ -55,7 +55,7 @@ export default function Form() {
         </div>
         <div className="form-group mb-4">
           <label
-            for="error-msg"
+            htmlFor="error-msg"
             className="block mb-1 text-sm font-medium text-sky-400"
           >
             Error Message
@@ -72,7 +72,7 @@ export default function Form() {
         </div>
         <div className="form-group mb-4">
           <label
-            for="po-no"
+            htmlFor="po-no"
             className="block mb-1 text-sm font-medium text-sky-400"
           >
             PO Number
@@ -89,7 +89,7 @@ export default function Form() {
         </div>
         <div className="form-group mb-4">
           <label
-            for="asn-no"
+            htmlFor="asn-no"
             className="block mb-1 text-sm font-medium text-sky-400"
           >
             ASN Number
@@ -106,7 +106,7 @@ export default function Form() {
         </div>
         <div className="form-group mb-4">
           <label
-            for="article-no"
+            htmlFor="article-no"
             className="block mb-1 text-sm font-medium text-sky-400"
           >
             Article Number
@@ -123,7 +123,7 @@ export default function Form() {
         </div>
         <div className="form-group mb-4">
           <label
-            for="quantity"
+            htmlFor="quantity"
             className="block mb-1 text-sm font-medium text-sky-400"
           >
             Quantity
@@ -142,7 +142,7 @@ export default function Form() {
           <button
             onClick={handleClick}
             type="button"
-            class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Clear
           </button>
