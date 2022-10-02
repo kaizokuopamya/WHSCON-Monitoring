@@ -34,8 +34,8 @@ export default function Form() {
   };
 
   return (
-    <div className="md:flex justify-around">
-      <form className="block p-6 mb-2 border dark:border-slate-600 rounded-lg shadow-lg bg-gray dark:bg-[001E3C] max-w-md w-full">
+    <div className="md:flex md:justify-around justify-center items-center">
+      <form className="block p-6 mb-4 border dark:border-slate-600 rounded-lg shadow-lg bg-gray dark:bg-[001E3C] w-4/5 my-0 mx-auto md:w-2/5 lg:max-w-md">
         <div className="form-group mb-4">
           <label
             htmlFor="idoc-no"
