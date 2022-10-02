@@ -30,8 +30,8 @@ Impacted article ${props.data.articleno} incl. quantity ${props.data.quantity}.
 Thank you`;
   return (
     <div className="cards flex-column justify-center items-center">
-      <label className="font-bold text-sky-500">Short Description:</label>
-      <div className="block p-6 mb-8 max-w-sm bg-[001E3C] rounded-lg border border-slate-600 shadow-md">
+      <label className="font-bold text-amber-400 dark:text-sky-500">Short Description:</label>
+      <div className="block p-6 mt-2 mb-8 max-w-sm bg-[001E3C] rounded-lg shadow-md border dark:border-slate-600">
         <CopyToClipboard text={shortDescription} onCopy={onCopyText}>
           <div>
             <Tooltip
@@ -43,17 +43,17 @@ Thank you`;
               theme="transparent"
               size="small"
             >
-              <FaCopy className="ml-1 float-right cursor-pointer text-white outline-none" />
+              <FaCopy className="ml-1 float-right cursor-pointer dark:text-white outline-none" />
             </Tooltip>
           </div>
         </CopyToClipboard>
-        <p className="font-normal text-gray-100 cursor-text">
+        <p className="font-normal dark:text-gray-100 cursor-text">
           {shortDescription}
         </p>
       </div>
 
-      <label className="font-bold text-sky-500">Description:</label>
-      <div className="block p-6 max-w-sm bg-[001E3C] rounded-lg border border-slate-600 shadow-md">
+      <label className="font-bold text-amber-400 dark:text-sky-500">Description:</label>
+      <div className="block p-6 mt-2 mb-2 max-w-sm bg-[001E3C] rounded-lg shadow-md border dark:border-slate-600">
         <CopyToClipboard text={description} onCopy={onCopyText}>
           <div>
             <Tooltip
@@ -65,11 +65,11 @@ Thank you`;
               theme="transparent"
               size="small"
             >
-              <FaCopy className="ml-1 float-right cursor-pointer text-white" />
+              <FaCopy className="ml-1 float-right cursor-pointer dark:text-white" />
             </Tooltip>
           </div>
         </CopyToClipboard>
-        <p className="font-normal text-gray-100 cursor-text">
+        <p className="font-normal dark:text-gray-100 cursor-text">
           <span>Dear colleagues,</span>
           <br />
           <br />
