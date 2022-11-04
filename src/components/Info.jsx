@@ -12,8 +12,8 @@ export default function Info(props) {
     setTimeout(() => {
       setIsCopied(false);
     }, 1000);
-    if(isCopied){
-      console.log("text copied to clipboard")
+    if (isCopied) {
+      console.log("text copied to clipboard");
     }
   };
 
@@ -30,8 +30,10 @@ Impacted article ${props.data.articleno} incl. quantity ${props.data.quantity}.
 Thank you`;
   return (
     <div className="cards flex-column justify-center items-center w-4/5 my-0 mx-auto md:w-2/5 lg:max-w-sm">
-      <label className="font-bold text-amber-400 dark:text-sky-500">Short Description:</label>
-      <div className="block p-6 mt-2 mb-8 bg-[001E3C] rounded-lg shadow-md border dark:border-slate-600">
+      <label className="font-bold text-amber-400 dark:text-sky-500">
+        Short Description:
+      </label>
+      <div className="block p-6 mt-2 mb-4 bg-[001E3C] rounded-lg shadow-md border dark:border-slate-600">
         <CopyToClipboard text={shortDescription} onCopy={onCopyText}>
           <div>
             <Tooltip
@@ -52,8 +54,10 @@ Thank you`;
         </p>
       </div>
 
-      <label className="font-bold text-amber-400 dark:text-sky-500">Description:</label>
-      <div className="block p-6 mt-2 max-w-sm bg-[001E3C] rounded-lg shadow-md border dark:border-slate-600">
+      <label className="font-bold text-amber-400 dark:text-sky-500">
+        Description:
+      </label>
+      <div className="block p-6 mt-2 mb-4 max-w-sm bg-[001E3C] rounded-lg shadow-md border dark:border-slate-600">
         <CopyToClipboard text={description} onCopy={onCopyText}>
           <div>
             <Tooltip
@@ -91,6 +95,15 @@ Thank you`;
           <br />
           <br />
           <span>Thank you</span>
+        </p>
+      </div>
+      <label className="font-bold text-amber-400 dark:text-sky-500">
+        Note:
+      </label>
+      <div className="block p-6 mt-2 max-w-sm bg-[001E3C] rounded-lg shadow-md border dark:border-slate-600">
+        <p className="font-normal dark:text-gray-100 cursor-text">
+          <strong>ER1 = 699 Austria</strong>, {" "}
+          <strong>E11 = 199 Germany</strong>
         </p>
       </div>
     </div>
